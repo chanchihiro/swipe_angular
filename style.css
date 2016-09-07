@@ -40,6 +40,10 @@ li img{
 	width: 100%;
 }
 
+form{
+	height: 100vh;
+}
+
 #square{
 	position: fixed;
 	top: 0;

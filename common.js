@@ -38,6 +38,7 @@ var mySwipe = angular.module("mySwipe",["ngResource"]);
 				lastname : $scope.users[0].lastname,
 				image : $scope.users[0].images,
 			});
+			$scope.element.parent().addClass("kieru");
 		};
 	}]);
 
