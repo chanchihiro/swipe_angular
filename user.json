@@ -1,0 +1,32 @@
+[
+	{
+		"firstname" : "野口",
+		"lastname" : "千紘",
+		"images":"img/chihiro.jpg"
+	},
+
+	{
+		"firstname" : "坂口",
+		"lastname" : "健太郎",
+		"images":"img/kentaro.jpg"
+	},
+
+	{
+		"firstname" : "中田",
+		"lastname" : "けいすけ",
+		"images":"img/nakata.jpg"
+	},
+
+	{
+		"firstname" : "清原",
+		"lastname" : "翔",
+		"images":"img/sho.jpg"
+	},
+
+	{
+		"firstname" : "わんおく",
+		"lastname" : "タカ",
+		"images":"img/taka.jpg"
+	}
+
+]
