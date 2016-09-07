@@ -11,14 +11,21 @@
 <body>
 
 	<div class="top" ng-controller="MainCtrl">
-		<li class="user" ng-repeat="user in users" ng-class="{like : user.like , nope : user.nope}">
-			<div class="image"><img src="{{user.images}}" alt=""></div>
-			<h2 ng-model="namae">{{user.firstname}}  {{user.lastname}}</h2>
+		<li class="user" ng-repeat="user in users| orderBy :random" ng-class="{like : user.like , nope : user.nope}">
+			<div class="image"><img src="{{user.images}}" ng-model="img" alt=""></div>
+			<h2 id="namae">{{user.firstname}}  {{user.lastname}}</h2>
 			<p>ログイン時間</p>
-			<button type="">ボタン</button>
-			<button type="">ボタン</button>
+			<button type="" ng-click="like()">好きです！</button>
+			<button type="" ng-click="nope()">嫌いです！</button>
 		</li>
-		<button type="" id="square">ボタンです</button>
+		<button type="" id="square">ボタン</button>
+		<div class="pre">
+		<pre >{{likeusers}}</pre>
+		<pre>{{nopeusers}}</pre>
+		</div>
 	</div>
+
+	<script src="jquery-1.12.4.min.js"></script>
+	<script src="jq.js"></script>
 </body>
 </html>
