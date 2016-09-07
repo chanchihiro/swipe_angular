@@ -12,7 +12,7 @@ var mySwipe = angular.module("mySwipe",["ngResource"]);
 			return 0.5 - Math.random();
 		};
 
-		var rd = $scope.random;
+		var rd = 0.5 - Math.random();
 
 
 
@@ -28,6 +28,7 @@ var mySwipe = angular.module("mySwipe",["ngResource"]);
 				lastname : $scope.users[0].lastname,
 				image : $scope.users[0].images,
 			});
+			$scope.element.parent().addClass("kieru");
 		};
 
 		//nopeの場合
@@ -39,6 +40,18 @@ var mySwipe = angular.module("mySwipe",["ngResource"]);
 			});
 		};
 	}]);
+
+
+	mySwipe.directive("login",function(){
+		return {
+			restrict : "C",
+			link : function(scope,element){
+				element.bind("click",function(){
+					element.parent().addClass("kieru");
+				});
+			}
+		};
+	});
 
 
 

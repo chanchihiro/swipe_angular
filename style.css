@@ -49,9 +49,17 @@ li img{
 
 .pre{
 	z-index: 10;
-	background-color: red;
+	/*background-color: red;*/
 	position: fixed;
 	bottom: 0;
+}
+
+.kieru{
+	display: none;
+}
+
+.red{
+	color: red;
 }
 
 
