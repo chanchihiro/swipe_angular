@@ -12,8 +12,8 @@
 
 	<div class="top" ng-controller="MainCtrl">
 		<li class="user" ng-repeat="user in users" ng-class="{like : user.like , nope : user.nope}">
-			<img src="{{user.img}}" alt="">
-			<h2 ng-model="namae">{{user.firstname}}</h2>
+			<div class="image"><img src="{{user.images}}" alt=""></div>
+			<h2 ng-model="namae">{{user.firstname}}  {{user.lastname}}</h2>
 			<p>ログイン時間</p>
 			<button type="">ボタン</button>
 			<button type="">ボタン</button>

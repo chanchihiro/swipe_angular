@@ -11,12 +11,6 @@ li{
 	overflow: hidden;
 }
 
-li img{
-	height: 80%;
-	border-bottom: 3px solid #000;
-	width: 100%;
-}
-
 li h2{
 	display: inline-block;
 	height: 20%;
@@ -25,6 +19,17 @@ li h2{
 
 li p,li button{
 	float: left;
+}
+
+.image{
+	width:100%;
+	height: 80%;
+	border-bottom: 3px solid #000;
+	overflow: hidden;
+}
+
+li img{
+	height: 100%;
 }
 
 #square{
