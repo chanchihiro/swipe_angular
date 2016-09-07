@@ -14,8 +14,8 @@
 		<li class="user" ng-repeat="user in users| orderBy :random" ng-class="{like : user.like , nope : user.nope}">
 			<div class="image"><img src="{{user.images}}" ng-model="img" alt=""></div>
 			<h2 class="namae">{{user.firstname}}  {{user.lastname}}</h2>
-			<p class="login">ログイン時間</p>
-			<button type="" ng-click="like()">好きです！</button>
+			<p>ログイン時間</p>
+			<div login="like()">すきだよ</div>
 			<button type="" ng-click="nope()">嫌いです！</button>
 		</li>
 		<button type="" id="square">ボタン</button>

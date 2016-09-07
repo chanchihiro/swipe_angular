@@ -44,10 +44,13 @@ var mySwipe = angular.module("mySwipe",["ngResource"]);
 
 	mySwipe.directive("login",function(){
 		return {
-			restrict : "C",
-			link : function(scope,element){
+			restrict : "A",
+			link : function(scope,element,attrs){
 				element.bind("click",function(){
 					element.parent().addClass("kieru");
+				});
+				element.bind("click",function(){
+					scope.$apply(attrs.login);
 				});
 			}
 		};
