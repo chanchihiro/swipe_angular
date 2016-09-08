@@ -2,6 +2,7 @@
 var mySwipe = angular.module("mySwipe",["ngResource","ngTouch","ngAnimate"]);
 
 	mySwipe.controller("MainCtrl",["$scope","$resource",function($scope,$resource){
+aaa
 
 		//jsonをngに格納
 		var contents = $resource("user.json");

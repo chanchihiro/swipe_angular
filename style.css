@@ -4,21 +4,24 @@
 }
 
 html{
-	border-left-width;
-	height:100vh;
+	height:100%;
 }
 
 body{
-	height: 100vh;
+	height: 100%;
 	overflow: hidden;
 }
 
+.top{
+	padding: 20px;
+}
 
 li{
 	list-style-type: none;
 	background-color: #ccc;
 	height: 100vh;
 	overflow: hidden;
+	border-radius: 30px;
 }
 
 li h2{
@@ -52,7 +55,7 @@ form{
 	position: fixed;
 	top: 0;
 	padding: 10px;
-
+	right: 0;
 }
 
 .pre{
@@ -66,9 +69,14 @@ form{
 	display: none;
 }
 
+.done{
+	display: none;
+}
+
 .red{
 	color: red;
 }
+
 
 
 

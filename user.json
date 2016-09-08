@@ -1,32 +1,43 @@
+
 [
 	{
 		"firstname" : "野口",
 		"lastname" : "千紘",
-		"images":"img/chihiro.jpg"
+		"images":"img/chihiro.jpg",
+		"done" : "false",
+		"id" : 1
 	},
 
 	{
 		"firstname" : "坂口",
 		"lastname" : "健太郎",
-		"images":"img/kentaro.jpg"
+		"images":"img/kentaro.jpg",
+		"done" : "false",
+		"id" : 2
 	},
 
 	{
 		"firstname" : "中田",
 		"lastname" : "けいすけ",
-		"images":"img/nakata.jpg"
+		"images":"img/nakata.jpg",
+		"done" : "false",
+		"id" : 3
 	},
 
 	{
 		"firstname" : "清原",
 		"lastname" : "翔",
-		"images":"img/sho.jpg"
+		"images":"img/sho.jpg",
+		"done" : "false",
+		"id" : 4
 	},
 
 	{
 		"firstname" : "わんおく",
 		"lastname" : "タカ",
-		"images":"img/taka.jpg"
+		"images":"img/taka.jpg",
+		"done" : "false",
+		"id" : 5
 	}
 
 ]

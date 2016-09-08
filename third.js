@@ -2,15 +2,10 @@
 var mySwipe = angular.module("mySwipe",["ngResource","ngTouch","ngAnimate"]);
 
 	mySwipe.controller("MainCtrl",["$scope","$resource",function($scope,$resource){
-
+	
 		//jsonをngに格納
 		var contents = $resource("user.json");
 		$scope.users = contents.query();
-
-		//ランダムに表示
-		$scope.random = function(){
-			return 0.5 - Math.random();
-		};
 
 
 		//入れる場所の用意
@@ -19,20 +14,20 @@ var mySwipe = angular.module("mySwipe",["ngResource","ngTouch","ngAnimate"]);
 
 
 		//likeの場合
-		$scope.like = function(){
+		$scope.like = function($index){
 			$scope.likeusers.push({
-				firstname : $scope.users.firstname,
-				lastname : $scope.users[0].lastname,
-				image : $scope.users[0].images
+				firstname : $scope.users[$index].firstname,
+				lastname : $scope.users[$index].lastname,
+				image : $scope.users[$index].images
 			});
 		};
 
 		//nopeの場合
-		$scope.nope = function(){
+		$scope.nope = function($index){
 			$scope.nopeusers.push({
-				firstname : $scope.users[0].firstname,
-				lastname : $scope.users[0].lastname,
-				image : $scope.users[0].images
+				firstname : $scope.users[$index].firstname,
+				lastname : $scope.users[$index].lastname,
+				image : $scope.users[$index].images
 			});
 		};
 	}]);
