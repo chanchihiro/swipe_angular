@@ -20,11 +20,19 @@
 <!-- 			<div login="like($index)">すきだよ</div>
 			<div login="nope($index)">嫌いです！</div> -->
 		</li>
-		<button type="" id="square">ボタン</button>
+		<div id="drag"></div>
 		<div class="pre">
 <!-- 		<pre>{{likeusers}}</pre>
 		<pre>{{nopeusers}}</pre> -->
 		</div>
 	</div>
+
+	<script src="jquery-1.12.4.min.js"></script>
+	<script src="jquery-ui.min.js"></script>
+	<script>
+		$(function(){
+			$("#drag").draggable();
+		});
+	</script>
 </body>
 </html>
