@@ -10,7 +10,7 @@
 	<script src="angular-touch.min.js"></script>
 	<script src="common.js"></script>
 </head>
-<body>
+<body onselectstart="return false;" onmousedown="return false;">
 
 	<div class="top" ng-controller="MainCtrl">
 		<li class="user" ng-repeat="user in users| orderBy :random" ng-swipe-left="like()" ng-swipe-right="nope()">

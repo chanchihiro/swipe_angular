@@ -26,7 +26,6 @@ var mySwipe = angular.module("mySwipe",["ngResource","ngTouch","ngAnimate"]);
 				lastname : $scope.users[0].lastname,
 				image : $scope.users[0].images,
 			});
-			$scope.element.parent().addClass("kieru");
 		};
 
 		//nopeの場合
@@ -35,9 +34,7 @@ var mySwipe = angular.module("mySwipe",["ngResource","ngTouch","ngAnimate"]);
 				firstname : $scope.users[0].firstname,
 				lastname : $scope.users[0].lastname,
 				image : $scope.users[0].images,
-			});
-			$scope.element.parent().addClass("kieru");
-		};
+			});		};
 	}]);
 
 
