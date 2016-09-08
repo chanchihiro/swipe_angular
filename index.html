@@ -21,7 +21,10 @@
 <!-- 			<div login="like($index)">すきだよ</div>
 			<div login="nope($index)">嫌いです！</div> -->
 		</li>
-		<div id="drag"></div>
+		<div class="like">L</div>
+		<div class="nope"></div>
+		<div id="drag"><br>♥</div>
+		<div id="drag2"><br>✖︎</div>
 		<div class="pre">
 <!-- 		<pre>{{likeusers}}</pre>
 		<pre>{{nopeusers}}</pre> -->
@@ -34,6 +37,24 @@
 	<script>
 		$(function(){
 			$("#drag").draggable();
+			$("#drag").on("click",function(){
+				$("#drag").toggleClass("open");
+				if($("#drag").hasClass('open')){
+					$(".like").stop(true).animate({"right":"0"});
+				}else{
+					$(".like").stop(true).animate({"right":"-100%"});
+				}
+			});
+
+			$("#drag2").draggable();
+			$("#drag2").on("click",function(){
+				$("#drag2").toggleClass("open");
+				if($("#drag2").hasClass('open')){
+					$(".nope").stop(true).animate({"left":"0"});
+				}else{
+					$(".nope").stop(true).animate({"left":"-100%"});
+				}
+			});
 		});
 	</script>
 </body>
