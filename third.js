@@ -20,6 +20,7 @@ var mySwipe = angular.module("mySwipe",["ngResource","ngTouch","ngAnimate"]);
 				lastname : $scope.users[$index].lastname,
 				image : $scope.users[$index].images
 			});
+			angular.element().find("li").hide();
 		};
 
 		//nopeの場合

@@ -13,17 +13,17 @@
 <body onselectstart="return false;" onmousedown="return false;">
 
 	<div class="top" ng-controller="MainCtrl">
-		<li class="user" ng-repeat="user in users| orderBy"  ng-swipe-right="like()" ng-attr-id="{{"hogehoge" + $index}}">
+		<li class="user" ng-repeat="user in users| orderBy"  ng-swipe-right="like($index)" ng-swipe-left="nope($index)" ng-attr-id="{{"hogehoge_" + $index}}">
 			<div class="image"><img src="{{users[$index].images}}" ng-model="img" alt=""></div>
-			<h2 class="namae" ng-model="namae"> {{$index}}  {{users[$index].firstname}}  {{users[$index].lastname}}</h2>
-			<p>ログイン時間</p>
-			<div login="like($index)">すきだよ</div>
-			<div login="nope($index)">嫌いです！</div>
+			<h2 class="namae" ng-model="namae">{{users[$index].firstname}}  {{users[$index].lastname}}</h2>
+			<p id="login">ログイン時間</p>
+<!-- 			<div login="like($index)">すきだよ</div>
+			<div login="nope($index)">嫌いです！</div> -->
 		</li>
 		<button type="" id="square">ボタン</button>
 		<div class="pre">
-		<pre>{{likeusers}}</pre>
-		<pre>{{nopeusers}}</pre>
+<!-- 		<pre>{{likeusers}}</pre>
+		<pre>{{nopeusers}}</pre> -->
 		</div>
 	</div>
 </body>

@@ -5,29 +5,46 @@
 
 html{
 	height:100%;
+	overflow: hidden;
 }
 
 body{
 	height: 100%;
 	overflow: hidden;
+	background-color:rgba(119, 212, 218,0.8) ;
 }
 
 .top{
-	padding: 20px;
+	padding: 30px 10%;
+	height: 100%;
+	overflow: hidden;
 }
 
 li{
 	list-style-type: none;
-	background-color: #ccc;
-	height: 100vh;
+	background-color: #fff;
+	height: 90%;
 	overflow: hidden;
-	border-radius: 30px;
+	border-radius: 15px;
+	margin-bottom: 100px;
+/*	border:solid 2px #000;*/
+	box-shadow:  2px 5px 5px #000;
 }
 
 li h2{
 	display: inline-block;
 	height: 20%;
 	float: left;
+	margin-left: 20px;
+	margin-top: 10px;
+	font-weight: normal;
+	font-size: 20px;
+}
+
+li #login{
+	color: rgba(0,0,0,0.4);
+	font-size: 12px;
+	margin-top: 10px;
 }
 
 li p,li button{
@@ -37,14 +54,14 @@ li p,li button{
 
 .image{
 	width:100%;
-	height: 80%;
-	border-bottom: 3px solid #000;
+	height: 90%;
+/*	border-bottom: 3px solid #000;*/
 	background-color: #cd8b68;
 	overflow: hidden;
 }
 
 li img{
-	width: 100%;
+	height: 100%;
 }
 
 form{
