@@ -1,5 +1,5 @@
 
-var mySwipe = angular.module("mySwipe",["ngResource"]);
+var mySwipe = angular.module("mySwipe",["ngResource","ngTouch","ngAnimate"]);
 
 	mySwipe.controller("MainCtrl",["$scope","$resource",function($scope,$resource){
 
@@ -11,9 +11,7 @@ var mySwipe = angular.module("mySwipe",["ngResource"]);
 		$scope.random = function(){
 			return 0.5 - Math.random();
 		};
-
-		var rd = 0.5 - Math.random();
-
+		$scope.rd = 0.5 - Math.random();
 
 
 		//入れる場所の用意
