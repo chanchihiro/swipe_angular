@@ -20,7 +20,7 @@ var mySwipe = angular.module("mySwipe",["ngResource","ngTouch","ngAnimate"]);
 				lastname : $scope.users[$index].lastname,
 				image : $scope.users[$index].images
 			});
-			angular.element().find("li").hide();
+			angular.element(document.getElementById("test" + $index)).addClass('kieru');
 		};
 
 		//nopeの場合
@@ -30,6 +30,7 @@ var mySwipe = angular.module("mySwipe",["ngResource","ngTouch","ngAnimate"]);
 				lastname : $scope.users[$index].lastname,
 				image : $scope.users[$index].images
 			});
+			angular.element(document.getElementById("test" + $index)).addClass('kieru');
 		};
 	}]);
 

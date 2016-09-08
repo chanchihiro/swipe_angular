@@ -8,22 +8,22 @@
 	<script src="angular-resource.js"></script>
 	<script src="angular-animate.min.js"></script>
 	<script src="angular-touch.min.js"></script>
-	<script src="common.js"></script>
+	<script src="third.js"></script>
 </head>
 <body onselectstart="return false;" onmousedown="return false;">
 
 	<div class="top" ng-controller="MainCtrl">
-		<li class="user" ng-repeat="user in users| orderBy :random">
-			<div class="image"><img src="{{user.images}}" ng-model="img" alt="" ng-swipe-right="like()"></div>
-			<h2 class="namae" ng-model="namae"> {{user.firstname}}  {{user.lastname}}</h2>
-			<p>ログイン時間</p>
-			<div login="like()">すきだよ</div>
-			<div login="nope()">嫌いです！</div>
+		<li class="user" ng-repeat="user in users| orderBy"  ng-swipe-right="like($index)" ng-swipe-left="nope($index)" id="{{'test' + $index}}">
+			<div class="image"><img src="{{users[$index].images}}" ng-model="img" alt=""></div>
+			<h2 class="namae" ng-model="namae">{{users[$index].firstname}}  {{users[$index].lastname}}</h2>
+			<p id="login">ログイン時間</p>
+<!-- 			<div login="like($index)">すきだよ</div>
+			<div login="nope($index)">嫌いです！</div> -->
 		</li>
 		<button type="" id="square">ボタン</button>
 		<div class="pre">
-		<pre>{{likeusers}}</pre>
-		<pre>{{nopeusers}}</pre>
+<!-- 		<pre>{{likeusers}}</pre>
+		<pre>{{nopeusers}}</pre> -->
 		</div>
 	</div>
 </body>
