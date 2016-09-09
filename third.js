@@ -18,7 +18,7 @@ var mySwipe = angular.module("mySwipe",["ngResource","ngTouch","ngAnimate"]);
 			$scope.likeusers.push({
 				firstname : $scope.users[$index].firstname,
 				lastname : $scope.users[$index].lastname,
-				image : $scope.users[$index].images
+				images : $scope.users[$index].images
 			});
 			angular.element(document.getElementById("test" + $index)).addClass('kieru');
 		};
@@ -28,7 +28,7 @@ var mySwipe = angular.module("mySwipe",["ngResource","ngTouch","ngAnimate"]);
 			$scope.nopeusers.push({
 				firstname : $scope.users[$index].firstname,
 				lastname : $scope.users[$index].lastname,
-				image : $scope.users[$index].images
+				images : $scope.users[$index].images
 			});
 			angular.element(document.getElementById("test" + $index)).addClass('kieru');
 		};

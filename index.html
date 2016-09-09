@@ -21,8 +21,20 @@
 <!-- 			<div login="like($index)">すきだよ</div>
 			<div login="nope($index)">嫌いです！</div> -->
 		</li>
-		<div class="like">L</div>
-		<div class="nope"></div>
+		<div class="like">
+			<h1>LIKE</h1>
+			<li ng-repeat="likeuser in likeusers" class="suki">
+				<div class="image2"><img src="{{likeuser.images}}" ng-model="img" alt=""></div>
+				<h2 class="namae2" ng-model="">{{likeuser.firstname}}  {{likeuser.lastname}}</h2>
+			</li>
+		</div>
+		<div class="nope">
+			<h1>NOPE</h1>
+			<li ng-repeat="nopeuser in nopeusers" class="suki">
+				<div class="image2"><img src="{{nopeuser.images}}" ng-model="img" alt=""></div>
+				<h2 class="namae2" ng-model="">{{nopeuser.firstname}}  {{nopeuser.lastname}}</h2>
+			</li>
+		</div>
 		<div id="drag"><br>♥</div>
 		<div id="drag2"><br>✖︎</div>
 		<div class="pre">
@@ -55,6 +67,8 @@
 					$(".nope").stop(true).animate({"left":"-100%"});
 				}
 			});
+
+			$("").draggable();
 		});
 	</script>
 </body>
